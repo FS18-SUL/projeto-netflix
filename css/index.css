@@ -91,9 +91,16 @@ main{
                         font-size: 12px;
                     }
                 }
-                /* &:not():invalid{
+                &:focus:invalid{
                     border-color: var(--red);
-                } */
+                    outline-color: var(--red);
+                    & ~ span{
+                        display: block;
+                        color: red;
+                        font-size: 12px;
+                        margin-top: 6px;
+                    }
+                }
                 & + h6{
                     position: absolute;
                     top: 50%;
